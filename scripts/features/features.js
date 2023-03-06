@@ -43,14 +43,13 @@ function add(name, toggle, func){
     };
 }
 
-function load(f){
+function load(f) {
     require(modName + "/features/" + f)(add);
 }
 
-load("v1");
-load("v2");
-load("v3");
-load("v4");
+for (let index = 0; index < 4; index++) {
+    load("v" + index)
+}
 
 // if the feature is on it should stay on
 Events.on(ClientLoadEvent, () => {

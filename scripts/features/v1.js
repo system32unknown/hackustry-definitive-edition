@@ -1,6 +1,5 @@
 const hconv = extend(Conveyor, "hackusated-conveyor", {
     localizedName: "Hackusated Conveyor",
-    description: "unit railgun",
     category: Category.distribution,
     buildVisibility: BuildVisibility.hidden,
     inEditor: false,
