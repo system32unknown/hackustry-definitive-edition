@@ -13,7 +13,6 @@ At this point this mod isn't really a cheat mod anymore. it has became a large t
 - Cursed Mode (v3)
 - Power Source Fix (v3)
 - Launch Anywhere
-- Discord Rich Presence
 - Informative Title Bar
 - Content Menu
     * Change build visibility of blocks (from v3)
@@ -28,22 +27,6 @@ At this point this mod isn't really a cheat mod anymore. it has became a large t
     * Hackustry settings button that opens the UI where everything is controlled from
     * Features stay upon game restarts
     * Import/Export configuration
-### In Progress/Not Happening
-- Account System
-    * Save names and UUID to quickly swap between
-    * Possibly save unlocks/saves/features
-    * In progress (probably will be in the groovy version)
-- Unit Factory
-    * no, already added in v7
-- Port to Groovy
-    * in progress (definitely happening)
-    * will improve code quality
-    * will also fix the code being too messy
-    * groovy closures are amazing
-- Add Bundle Support
-    * translatable cheats wow
-    * i mean it would help
-    * most likely with the groovy version
 
 ## Credits
 * Some people who helped me with the code while making the large v4 update:
