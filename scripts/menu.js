@@ -37,9 +37,6 @@ function setupDialog() {
         
         add("reconstructors", "make reconstructors cost nothing and instant");
         add("power-sources", "fix vanilla power sources");
-        add("cursed-mode", "cursed mode");
-        add("hackusated-conveyor", "hackusated conveyor");
-        add("hackusated-walls", "hackusated walls");
         add("launch-anywhere", "launch anywhere");
         add("unit-anywhere", "unit anywhere");
     }).growY().width(Core.graphics.getWidth());
