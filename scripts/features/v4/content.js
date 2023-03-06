@@ -10,13 +10,13 @@ function content(){
         let i = 0;
         Vars.content.each(e => {
             if(!(e instanceof UnlockableContent)) return;
-            p.button(e.localizedName, new TextureRegionDrawable(e.icon(Cicon.medium)), () => {
+            p.button(e.localizedName, new TextureRegionDrawable(e.uiIcon), () => {
                 const content = new BaseDialog(e.name);
                 content.addCloseButton();
                 
                 let c = content.cont;
                 c.defaults().center();
-                c.image(e.icon(Cicon.full));
+                c.image(e.uiIcon);
                 c.row();
                 c.label(() => {
                     let n = e.class.name.includes("$") ? e.class.superclass.name : e.class.name;
@@ -84,18 +84,16 @@ function content(){
                                 if(!(i2 % 2)) pane.row();
                             });
                         }).join();
-                    }).growY().width(Vars.mobile ? Core.graphics.getWidth() : Core.graphics.getWidth()/3);
-                    
+                    }).growY().width(Core.graphics.getWidth());
                     stats.show();
                 }).size(210, 64);
                 c.row();
-                
                 content.show();
             });
             i++;
             if(!(i % 2)) p.row();
         });
-    }).growY().width(Vars.mobile ? Core.graphics.getWidth() : Core.graphics.getWidth()/3);
+    }).growY().width(Core.graphics.getWidth());
     
     dialog.buttons.button("more", Icon.add, () => {
         const more = new BaseDialog("more");
@@ -143,11 +141,9 @@ function content(){
                 }).size(210, 64);
                 bv.cont.row();
             });
-            
             bv.show();
         });
         c.row();
-       
         more.show();
     });
     

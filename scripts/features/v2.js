@@ -26,36 +26,28 @@ const wallbuild = {
     }
 };
 
-let wall, largewall;
-
-Events.on(ContentInitEvent, () => {
-    wall = extend(Wall, "hackusated-wall", {
-        localizedName: "Hackusated Wall",
-        category: Category.defense,
-        buildVisibility: BuildVisibility.hidden,
-        inEditor: false,
-        size: 1,
-        
-        health: Integer.MAX_VALUE
-    });
-    wall.buildType = () => extend(Wall.WallBuild, wall, wallbuild);
-
-    largewall = extend(Wall, "hackusated-wall-large", {
-        localizedName: "Large Hackusated Wall",
-        category: Category.defense,
-        buildVisibility: BuildVisibility.hidden,
-        inEditor: false,
-        size: 2,
-        
-        health: Integer.MAX_VALUE
-    });
-    largewall.buildType = () => extend(Wall.WallBuild, largewall, wallbuild);
+const wall = extend(Wall, "hackusated-wall", {
+    localizedName: "Hackusated Wall",
+    category: Category.defense,
+    buildVisibility: BuildVisibility.hidden,
+    inEditor: false,
+    size: 1,
     
-    wall.init();
-    largewall.init();
+    health: Integer.MAX_VALUE
 });
+wall.buildType = () => extend(Wall.WallBuild, wall, wallbuild);
 
-/*
+const largewall = extend(Wall, "hackusated-wall-large", {
+    localizedName: "Large Hackusated Wall",
+    category: Category.defense,
+    buildVisibility: BuildVisibility.hidden,
+    inEditor: false,
+    size: 2,
+    
+    health: Integer.MAX_VALUE
+});
+largewall.buildType = () => extend(Wall.WallBuild, largewall, wallbuild);
+
 const mender = extend(MendProjector, "hackusated-mender", {
     localizedName: "Hackusated Mender",
     category: Category.effect,
@@ -63,7 +55,6 @@ const mender = extend(MendProjector, "hackusated-mender", {
     inEditor: false,
     size: 2    
 });
-
 const od = extend(OverdriveProjector, "hackusated-overdrive", {
     localizedName: "Hackusated Overdrive",
     category: Category.effect,
@@ -71,17 +62,16 @@ const od = extend(OverdriveProjector, "hackusated-overdrive", {
     inEditor: false,
     size: 2
 });
-*/
 
 module.exports = (add) => {
     add("hackusated-walls", true, t => {
         wall.inEditor = t;
         wall.buildVisibility = t ? BuildVisibility.shown : BuildVisibility.hidden;
+		
         largewall.inEditor = t;
         largewall.buildVisibility = t ? BuildVisibility.shown : BuildVisibility.hidden;
     });
-    
-    /*
+	
     add("hackusated-mender", true, t => {
         mender.inEditor = t;
         mender.buildVisibility = t ? BuildVisibility.shown : BuildVisibility.hidden;
@@ -91,5 +81,4 @@ module.exports = (add) => {
         od.inEditor = t;
         od.buildVisibility = t ? BuildVisibility.shown : BuildVisibility.hidden;
     });
-    */
 };

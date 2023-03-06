@@ -2,7 +2,7 @@
     name: "hackustry",
     displayName: "Hackustry",
     author: "QmelZ",
-    description: "Hackustry v4",
+    description: "Hackustry v7",
     version: 4,
     minGameVersion: 126,
     hidden: true

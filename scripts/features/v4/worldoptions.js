@@ -43,7 +43,7 @@ function worldoptions(){
         }));
         p.row();
         
-    }).growY().width(Vars.mobile ? Core.graphics.getWidth() : Core.graphics.getWidth()/3);
+    }).growY().width(Core.graphics.getWidth());
     
     dialog.show();
 }

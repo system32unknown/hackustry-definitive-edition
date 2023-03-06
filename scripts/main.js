@@ -3,31 +3,16 @@
     have fun trying to read it without dying
 */
 
-Vars.enableConsole = true;
-
-if(Vars.headless){
-    throw "no server support yet";
-}else{
+if(!Vars.headless) {
     if(Core.app.isDesktop()){
-        rpc();
         title();
     }
     
     const menu = require(modName + "/menu");
-    let dialog;
     Events.on(ClientLoadEvent, () => {
-        dialog = menu.setupDialog();
+        const dialog = menu.setupDialog();
         menu.addSettings(dialog);
     });
-}
-
-// most pointless thing i have ever done
-function rpc(){
-    try{
-        importPackage(Packages.club.minnced.discord.rpc);
-        DiscordRPC.INSTANCE.Discord_Shutdown();
-        DiscordRPC.INSTANCE.Discord_Initialize("846047005901586432", null, true, "1127400");
-    }catch(c){}
 }
 
 // ignore the above comment this is worse
