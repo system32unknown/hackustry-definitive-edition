@@ -41,6 +41,8 @@ function setupDialog() {
         add("unit-anywhere", "unit anywhere");
         add("hackusated-conveyor", "hackusated conveyor");
         add("hackusated-walls", "hackusated walls");
+        add("hackusated-mender", "hackusated mender");
+        add("hackusated-overdrive", "hackusated overdrive"):
     }).growY().width(Core.graphics.getWidth());
     return dialog;
 }
