@@ -47,7 +47,7 @@ function load(f) {
     require(modName + "/features/" + f)(add);
 }
 
-for (let index = 0; index < 4; index++) {
+for (let index = 1; index < 4; index++) {
     load("v" + index)
 }
 
