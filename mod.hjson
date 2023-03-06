@@ -1,9 +1,9 @@
 {
     name: "hackustry",
-    displayName: "Hackustry",
-    author: "QmelZ",
-    description: "Hackustry v7",
+    displayName: "Hackustry Definitive Edition",
+    author: "QmelZ, Altertoriel",
+    description: "Hackustry",
     version: 4,
-    minGameVersion: 126,
+    minGameVersion: 22566,
     hidden: true
 }
