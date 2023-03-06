@@ -39,6 +39,8 @@ function setupDialog() {
         add("power-sources", "fix vanilla power sources");
         add("launch-anywhere", "launch anywhere");
         add("unit-anywhere", "unit anywhere");
+        add("hackusated-conveyor", "hackusated conveyor");
+        add("hackusated-walls", "hackusated walls");
     }).growY().width(Core.graphics.getWidth());
     return dialog;
 }
