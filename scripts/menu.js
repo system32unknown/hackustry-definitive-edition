@@ -42,7 +42,7 @@ function setupDialog() {
         add("hackusated-conveyor", "hackusated conveyor");
         add("hackusated-walls", "hackusated walls");
         add("hackusated-mender", "hackusated mender");
-        add("hackusated-overdrive", "hackusated overdrive"):
+        add("hackusated-overdrive", "hackusated overdrive");
     }).growY().width(Core.graphics.getWidth());
     return dialog;
 }
