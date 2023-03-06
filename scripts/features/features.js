@@ -5,15 +5,12 @@ const features = {};
 let restart = false;
 
 const util = {
-    features(){
+    features() {
         return features;
-    },
-    get(name){
+    }, get(name) {
         if(!name || typeof name !== "string") return;
-        
         return Core.settings.getBool(name);
-    },
-    runf(name){
+    }, runf(name) {
         if(!name || typeof name !== "string") return;
         
         let enabled = !Core.settings.getBool(name);
@@ -54,7 +51,6 @@ load("v1");
 load("v2");
 load("v3");
 load("v4");
-
 
 // if the feature is on it should stay on
 Events.on(ClientLoadEvent, () => {
