@@ -2,7 +2,6 @@
     name: "hackustry",
     displayName: "Hackustry Definitive Edition",
     author: "QmelZ, Altertoriel",
-    description: "Hackustry",
     version: 4,
     minGameVersion: 22566,
     hidden: true
