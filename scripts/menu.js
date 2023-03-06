@@ -1,5 +1,4 @@
 const features = require(modName + "/features/features");
-let toast = require(modName + "/libs/toast");
 
 let loadf = (name) => require(modName + "/features/v4/" + name);
 const menus = [
@@ -8,8 +7,8 @@ const menus = [
     loadf("transform"),
 ];
 
-function setupDialog(){
-    const dialog = new BaseDialog("Hackustry");
+function setupDialog() {
+    const dialog = new BaseDialog("Hackustry Definitive Edition");
     dialog.addCloseButton();
     
     // this is P A I N
@@ -44,8 +43,6 @@ function setupDialog(){
         add("launch-anywhere", "launch anywhere");
         add("unit-anywhere", "unit anywhere");
     }).growY().width(Core.graphics.getWidth());
-    
-    dialog.buttons.button("more", Icon.add, () => more()).size(210, 64);
     return dialog;
 }
 
