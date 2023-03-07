@@ -3,7 +3,7 @@ const hconv = extend(Conveyor, "hackusated-conveyor", {
     category: Category.distribution,
     buildVisibility: BuildVisibility.hidden,
     inEditor: false,
-    health: 99999,
+    health: Integer.MAX_VALUE,
     speed: 99999,
     alwaysUnlocked: true
 });

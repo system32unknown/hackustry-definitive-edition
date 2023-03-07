@@ -1,27 +1,19 @@
 importPackage(java.lang);
 
 const wallbuild = {
-    updateTile(){
+    updateTile() {
         this.super$updateTile();
         this.health = this.maxHealth;
-    },
-    
-    collision: () => true,
-    
-    no(){
+    }, collision: () => true, no() {
         this.dead = false;
         this.health = this.maxHealth;
-    },
-    kill(){
+    }, kill() {
         this.no();
-    },
-    killed(){
+    }, killed() {
         this.no();
-    },
-    remove(){
+    }, remove() {
         this.no();
-    },
-    damage(){
+    }, damage() {
         this.no();
     }
 };

@@ -47,12 +47,12 @@ function setupDialog() {
     return dialog;
 }
 
-function addSettings(dialog){ 
-    Vars.ui.settings.shown(() => { 
-        Vars.ui.settings.children.get(1).children.get(0).children.get(0).row(); 
-        Vars.ui.settings.children.get(1).children.get(0).children.get(0).button("Hackustry", Styles.cleart, () => { 
+function addSettings(dialog) { 
+    Vars.ui.settings.shown(() => { 
+        Vars.ui.settings.children.get(1).children.get(0).children.get(0).row(); 
+        Vars.ui.settings.children.get(1).children.get(0).children.get(0).button("Hackustry DE", Styles.cleart, () => { 
             dialog.show(); 
-            Vars.ui.settings.hide(); 
+            Vars.ui.settings.hide(); 
         }); 
     });
 }

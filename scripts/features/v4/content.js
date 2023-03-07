@@ -76,7 +76,7 @@ function content(){
                                         if(v.match(/^true$|^false$/)) value = eval(v);
                                         try{
                                             e[s] = value;
-                                        }catch(c){}
+                                        } catch(c) {}
                                     });
                                     stats.hide();
                                 }).size(210, 64);
