@@ -2,5 +2,6 @@
     name: "Hackustry DE",
     displayName: "Hackustry Definitive Edition",
     author: "QmelZ, Altertoriel",
-    version: 4
+    version: 4,
+    minGameVersion: 136
 }
